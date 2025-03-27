@@ -4,21 +4,22 @@ export const getStockPrice = async (symbol: string): Promise<number | null> => {
   try {
     let yahooSymbol = symbol;
     if (symbol.includes('/')) {
-      yahooSymbol = symbol.replace('/', '-');
+      yahooSymbol = symbol.replace('/', '-'); // Convert forex/crypto symbols
     }
 
     // Add a small delay to avoid rate limiting
     await new Promise(resolve => setTimeout(resolve, 100));
 
-    const quote = await yahooFinance.quote(yahooSymbol, {}, { timeout: 10000 });
+    // Fetch stock data
+    const quote = await yahooFinance.quote(yahooSymbol);
+
+    console.log(`Quote data for ${symbol}:`, quote); // Debugging: Check response fields
 
     if (quote?.regularMarketPrice) {
       return quote.regularMarketPrice;
-    } else if (quote?.chartPreviousClose) {
-      return quote.chartPreviousClose;
-    }
+    } 
 
-    return null;
+    return null; // Fallback if price isn't available
   } catch (error) {
     console.error(`Error fetching price for ${symbol}:`, error);
     return null;
