@@ -2,8 +2,7 @@ import yahooFinance from 'yahoo-finance2';
 
 // Configure Yahoo Finance client
 yahooFinance.setGlobalConfig({
-  validateResult: false, // Disable validation to handle more symbol types
-  timeout: 10000, // 10 second timeout
+  timeout: 10000, // 10-second timeout
 });
 
 export const getStockPrice = async (symbol: string): Promise<number | null> => {
@@ -33,4 +32,4 @@ export const getStockPrice = async (symbol: string): Promise<number | null> => {
   }
 };
 
-export default yahooFinance; 
+export default yahooFinance;
