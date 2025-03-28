@@ -19,7 +19,7 @@ export default function LandingPage() {
       <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-xl shadow-lg">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Stock Simulator</h1>
-          <p className="text-gray-600">Practice trading with virtual money</p>
+          <p className="text-gray-600">Make your money double </p>
         </div>
 
         <div className="mt-8 space-y-4">
@@ -53,19 +53,19 @@ export default function LandingPage() {
               <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span className="text-gray-600">Real-time stock data</span>
+              <span className="text-gray-600">Real-time money making</span>
             </div>
             <div className="flex items-center">
               <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span className="text-gray-600">Virtual portfolio management</span>
+              <span className="text-gray-600">Portfolio management</span>
             </div>
             <div className="flex items-center">
               <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span className="text-gray-600">Watchlist functionality</span>
+              <span className="text-gray-600">Be a Pro Trader</span>
             </div>
             <div className="flex items-center">
               <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
